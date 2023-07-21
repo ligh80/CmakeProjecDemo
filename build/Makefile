@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles /home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles/progress.marks
@@ -123,19 +134,6 @@ Demo/fast:
 	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
 .PHONY : Demo/fast
 
-#=============================================================================
-# Target rules for targets named MathFunctions
-
-# Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions
-.PHONY : MathFunctions
-
-# fast build rule for target.
-MathFunctions/fast:
-	$(MAKE) -f lib/math/CMakeFiles/MathFunctions.dir/build.make lib/math/CMakeFiles/MathFunctions.dir/build
-.PHONY : MathFunctions/fast
-
 src/main.o: src/main.cc.o
 
 .PHONY : src/main.o
@@ -170,9 +168,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Demo"
 	@echo "... edit_cache"
-	@echo "... MathFunctions"
+	@echo "... Demo"
+	@echo "... test"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

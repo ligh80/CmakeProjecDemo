@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ligh/linux/temp/1_testproject/appproject/build
 # Target rules for target CMakeFiles/Demo.dir
 
 # All Build rule for target.
-CMakeFiles/Demo.dir/all: lib/math/CMakeFiles/MathFunctions.dir/all
+CMakeFiles/Demo.dir/all:
 	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/depend
 	$(MAKE) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles --progress-num=1,2 "Built target Demo"
@@ -81,7 +81,7 @@ all: CMakeFiles/Demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles 0
 .PHONY : CMakeFiles/Demo.dir/rule
@@ -98,61 +98,6 @@ CMakeFiles/Demo.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/Demo.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory lib/math
-
-# Convenience name for "all" pass in the directory.
-lib/math/all: lib/math/CMakeFiles/MathFunctions.dir/all
-
-.PHONY : lib/math/all
-
-# Convenience name for "clean" pass in the directory.
-lib/math/clean: lib/math/CMakeFiles/MathFunctions.dir/clean
-
-.PHONY : lib/math/clean
-
-# Convenience name for "preinstall" pass in the directory.
-lib/math/preinstall:
-
-.PHONY : lib/math/preinstall
-
-#=============================================================================
-# Target rules for target lib/math/CMakeFiles/MathFunctions.dir
-
-# All Build rule for target.
-lib/math/CMakeFiles/MathFunctions.dir/all:
-	$(MAKE) -f lib/math/CMakeFiles/MathFunctions.dir/build.make lib/math/CMakeFiles/MathFunctions.dir/depend
-	$(MAKE) -f lib/math/CMakeFiles/MathFunctions.dir/build.make lib/math/CMakeFiles/MathFunctions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles --progress-num=3,4 "Built target MathFunctions"
-.PHONY : lib/math/CMakeFiles/MathFunctions.dir/all
-
-# Include target in all.
-all: lib/math/CMakeFiles/MathFunctions.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-lib/math/CMakeFiles/MathFunctions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 lib/math/CMakeFiles/MathFunctions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles 0
-.PHONY : lib/math/CMakeFiles/MathFunctions.dir/rule
-
-# Convenience name for target.
-MathFunctions: lib/math/CMakeFiles/MathFunctions.dir/rule
-
-.PHONY : MathFunctions
-
-# clean rule for target.
-lib/math/CMakeFiles/MathFunctions.dir/clean:
-	$(MAKE) -f lib/math/CMakeFiles/MathFunctions.dir/build.make lib/math/CMakeFiles/MathFunctions.dir/clean
-.PHONY : lib/math/CMakeFiles/MathFunctions.dir/clean
-
-# clean rule for target.
-clean: lib/math/CMakeFiles/MathFunctions.dir/clean
 
 .PHONY : clean
 
