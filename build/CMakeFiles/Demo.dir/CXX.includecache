@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//lib/math/MathFunctions.h
+
+/home/ligh/linux/temp/1_testproject/appproject/src/main.cc
+stdio.h
+-
+stdlib.h
+-
+config.h
+/home/ligh/linux/temp/1_testproject/appproject/src/config.h
+lib/math/MathFunctions.h
+/home/ligh/linux/temp/1_testproject/appproject/src/lib/math/MathFunctions.h
+math.h
+-
+
+config.h
+

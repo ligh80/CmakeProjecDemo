@@ -1,0 +1,6 @@
+/home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles/rebuild_cache.dir
+/home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles/Demo.dir
+/home/ligh/linux/temp/1_testproject/appproject/build/CMakeFiles/edit_cache.dir
+/home/ligh/linux/temp/1_testproject/appproject/build/lib/math/CMakeFiles/rebuild_cache.dir
+/home/ligh/linux/temp/1_testproject/appproject/build/lib/math/CMakeFiles/MathFunctions.dir
+/home/ligh/linux/temp/1_testproject/appproject/build/lib/math/CMakeFiles/edit_cache.dir
