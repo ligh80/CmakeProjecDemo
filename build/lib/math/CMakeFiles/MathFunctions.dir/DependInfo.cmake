@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ligh/linux/temp/1_testproject/appproject/lib/math/MathFunctions.cc" "/home/ligh/linux/temp/1_testproject/appproject/build/lib/math/CMakeFiles/MathFunctions.dir/MathFunctions.cc.o"
+  "/home/ligh/linux/temp/CmakeProjecDemo/lib/math/MathFunctions.cc" "/home/ligh/linux/temp/CmakeProjecDemo/build/lib/math/CMakeFiles/MathFunctions.dir/MathFunctions.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,6 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "lib/math"
   "../lib/math"
+  "../include"
   )
 
 # Targets to which this target links.

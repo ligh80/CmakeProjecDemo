@@ -8,15 +8,15 @@
 
 ..//lib/math/MathFunctions.h
 
-/home/ligh/linux/temp/1_testproject/appproject/src/main.cc
+/home/ligh/linux/temp/CmakeProjecDemo/src/main.cc
 stdio.h
 -
 stdlib.h
 -
 config.h
-/home/ligh/linux/temp/1_testproject/appproject/src/config.h
+/home/ligh/linux/temp/CmakeProjecDemo/src/config.h
 lib/math/MathFunctions.h
-/home/ligh/linux/temp/1_testproject/appproject/src/lib/math/MathFunctions.h
+/home/ligh/linux/temp/CmakeProjecDemo/src/lib/math/MathFunctions.h
 math.h
 -
 

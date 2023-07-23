@@ -1,4 +1,4 @@
-# Install script for directory: /home/ligh/linux/temp/1_testproject/appproject/lib/math
+# Install script for directory: /home/ligh/linux/temp/CmakeProjecDemo/lib/math
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

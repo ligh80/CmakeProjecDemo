@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/runUnitTests.dir/test.cc.o  -o runUnitTests ../lib/libgtest.a ../lib/libgtest_main.a ../lib/math/libMathFunctions.a ../lib/libgtest.a -lpthread 

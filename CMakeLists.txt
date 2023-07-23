@@ -4,6 +4,13 @@ cmake_minimum_required (VERSION 2.8)
 # 项目信息
 project (Demo4)
 
+# 增加项目头文件搜索路径
+include_directories ("${PROJECT_SOURCE_DIR}/include") #增加项目头文件搜索路径
+
+
+
+
+
 # 以下使能模块控制功能
 ###################################################################################
 # 根据选项功能将input文件转化成output;作用是让普通文件也能使用CMake中的变量
@@ -29,9 +36,16 @@ if (USE_MYMATH)
   set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions) #增加链接库名字
 endif (USE_MYMATH)
 ####################################################################################3
+# add google test library & add test sample
+set(gtest_force_shared_crt ON CACHE BOOL "Use shared (DLL) run-time lib even when Google Test is built as static lib.")
+add_subdirectory("${PROJECT_SOURCE_DIR}/lib/googletest")
+include_directories("${PROJECT_SOURCE_DIR}/lib/googletest/googletest/include")
+add_subdirectory("${PROJECT_SOURCE_DIR}/test")
 
-# 增加项目头文件搜索路径
-include_directories ("${PROJECT_SOURCE_DIR}/include") #增加项目头文件搜索路径
+####################################################################################
+
+
+
 
 # 显示当前所包含的所有include路径
 get_property(dirs DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
@@ -44,7 +58,6 @@ aux_source_directory(./src DIR_SRCS)
 # 指定生成目标
 add_executable (Demo  ${DIR_SRCS})
 target_link_libraries (Demo ${EXTRA_LIBS})
-
 
 
 #以下使用CTEST来启动测试 使用make test来启动

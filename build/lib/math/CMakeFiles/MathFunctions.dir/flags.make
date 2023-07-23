@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ligh/linux/temp/1_testproject/appproject/build/lib/math -I/home/ligh/linux/temp/1_testproject/appproject/lib/math 
+CXX_INCLUDES = -I/home/ligh/linux/temp/CmakeProjecDemo/build/lib/math -I/home/ligh/linux/temp/CmakeProjecDemo/lib/math -I/home/ligh/linux/temp/CmakeProjecDemo/include 
 
